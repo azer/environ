@@ -1,0 +1,32 @@
+{
+  "name": "environ",
+  "version": "1.0.0",
+  "description": "Cross-platform environment detection library for JavaScript",
+  "author": "Azer Koculu <azer@kodfabrik.com> (http://azer.kodfabrik.com)",
+  "keywords": [
+    "environ",
+    "browser",
+    "navigator",
+    "platform",
+    "vendor",
+    "detection"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/environ",
+  "engines": {
+    "node": "*"
+  },
+  "modules": {
+    "environ.js": "lib/environ.js"
+  },
+  "files": [
+    ""
+  ],
+  "homepage": "http://github.com/azer/environ",
+  "repository": { "type":"git",  "url" : "http://github.com/azer/environ.git" },
+  "scripts": {
+    "test": "node test/node.js"
+  }
+}
