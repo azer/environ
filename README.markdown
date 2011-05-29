@@ -1,0 +1,53 @@
+Cross platform environment detection library for JavaScript. Tested platforms; Node, Firefox 4, Chrome 12
+
+Install
+=======
+npm install environ
+
+Usage
+=====
+On Browsers:
+
+    <script src="environ.js"></script>
+
+    > environ.node()
+    false
+    > environ.dom()
+    true
+    > environ.v8()
+    true
+    > environ.webkit()
+    true
+
+On a CommonJS compliant platform:
+
+    > var environ = require('environ');
+    > environ.node()
+    true
+    > environ.dom()
+    false
+    > environ.v8()
+    true
+    > environ.webkit()
+    false
+
+Available Methods
+=================
+* dom
+* firefox
+* gecko
+* jsc
+* ie
+* linux
+* navigator
+* node
+* mobile
+* opera
+* safari
+* webkit
+* v8
+
+Testing
+=======
+node test/node.js
+w3 test/browser.html
