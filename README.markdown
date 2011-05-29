@@ -1,4 +1,4 @@
-Cross platform environment detection library for JavaScript. Tested platforms; Node, Firefox 4, Chrome 12
+Cross platform environment detection library for JavaScript. Tested platforms; Node, Firefox 4, Chrome 12, IE8
 
 Install
 =======
