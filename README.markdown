@@ -2,7 +2,9 @@ Cross platform environment detection library for JavaScript. Tested platforms; N
 
 Install
 =======
-npm install environ
+* npm install environ
+or
+* curl https://github.com/azer/environ/raw/master/lib/environ.js
 
 Usage
 =====
@@ -49,5 +51,5 @@ Available Methods
 
 Testing
 =======
-node test/node.js
-w3 test/browser.html
+* node test/node.js
+* w3 test/browser.html
