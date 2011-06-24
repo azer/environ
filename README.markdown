@@ -35,6 +35,7 @@ On a CommonJS compliant platform:
 Available Methods
 =================
 * dom
+* chrome
 * firefox
 * gecko
 * jsc
