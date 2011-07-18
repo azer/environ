@@ -40,6 +40,7 @@ Available Methods
 * gecko
 * jsc
 * ie
+* kindle
 * linux
 * navigator
 * node
