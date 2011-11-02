@@ -23,6 +23,8 @@ On Browsers:
 On a CommonJS compliant platform:
 
     > var environ = require('environ');
+    > environ.packages()
+    true
     > environ.node()
     true
     > environ.dom()
@@ -42,6 +44,7 @@ Available Methods
 * ie
 * kindle
 * linux
+* modules
 * navigator
 * node
 * mobile

@@ -4,6 +4,7 @@ if(typeof require!='undefined'){
 }
 
 var node = typeof process != 'undefined' && process.EventEmitter != undefined,
+    modules = node || (typeof module !== 'undefined' || module.exports),
     nav = typeof window != 'undefined' && window.navigator != undefined;
 
 function test_browsers(){
@@ -30,6 +31,7 @@ function test_engines(){
 
 function test_platform(){ 
   assert.equal(environ.node(), node);
+  assert.equal(environ.modules(), modules);
 }
 
 var tests = {
