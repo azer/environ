@@ -11,6 +11,8 @@ On Browsers:
 
     <script src="environ.js"></script>
 
+    > environ()
+    { chrome: true, dom: true, gecko: true, navigator: true, safari: true, v8: true, webkit: true }
     > environ.node()
     false
     > environ.dom()
@@ -23,6 +25,9 @@ On Browsers:
 On a CommonJS compliant platform:
 
     > var environ = require('environ');
+
+    > environ()
+    { linux: true, modules: true, node: true, v8: true }
     > environ.packages()
     true
     > environ.node()
@@ -42,6 +47,11 @@ Available Methods
 * gecko
 * jsc
 * ie
+* ie6
+* ie7
+* ie8
+* ie9
+* ie10
 * kindle
 * linux
 * modules

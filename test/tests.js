@@ -4,7 +4,7 @@ if(typeof require!='undefined'){
 }
 
 var node = typeof process != 'undefined' && process.EventEmitter != undefined,
-    modules = node || (typeof module !== 'undefined' || module.exports),
+    modules = node || (typeof module !== 'undefined' && module.exports),
     nav = typeof window != 'undefined' && window.navigator != undefined;
 
 function test_browsers(){
@@ -22,7 +22,7 @@ function test_dom(){
 
 function test_engines(){
   var jsc = false;
-  try { err++ } catch(exc){ jsc = exc.sourceId != undefined }
+  try { err++ } catch(exc){ jsc = exc.sourceId != undefined; }
   assert.equal(environ.jsc(), jsc); 
   assert.equal(environ.v8(), node || ( environ.webkit() && !jsc ) );
   assert.equal(environ.gecko(), nav && /gecko/i.test(navigator.userAgent));
