@@ -5,7 +5,9 @@ if(typeof require!='undefined'){
 
 var node = typeof process != 'undefined' && process.EventEmitter != undefined,
     modules = node || (typeof module !== 'undefined' && module.exports),
-    nav = typeof window != 'undefined' && window.navigator != undefined;
+    nav = typeof window != 'undefined' && window.navigator != undefined,
+    linux = node ? process.platform == 'linux' : /linux/i.test(navigator.userAgent),
+    osx = node ? process.platform == 'darwin' : /mac os x/i.test(navigator.userAgent);
 
 function test_browsers(){
   assert.equal(environ.firefox(), nav && /firefox/i.test(navigator.userAgent));
@@ -32,6 +34,8 @@ function test_engines(){
 function test_platform(){ 
   assert.equal(environ.node(), node);
   assert.equal(environ.modules(), modules);
+  assert.equal(environ.linux(), linux);
+  assert.equal(environ.osx(), osx);
 }
 
 var tests = {
