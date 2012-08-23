@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/azer/environ.png)](http://travis-ci.org/azer/environ)
 Cross platform environment detection library for JavaScript. Tested platforms; Node, Firefox 4, Chrome 12, IE8
 
 Install
